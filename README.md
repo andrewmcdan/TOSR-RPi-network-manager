@@ -14,3 +14,6 @@ The Raspberry Pi network manager daemon for Tactical Open Source Radio - [TOSR](
 - Providing IP service via the VHF/UHF radio will require an entire IP stack and a virtual ethernet interface. It will be limited in throughput due to the nature of the radio's data link, and the fact that it will be sharing throughput with other data that the TOSR needs to send out. 
 - The Wifi mesh manager, bridge manager, and VHF/UHF virtual ethernet services may have to be broken out into individual services due to the complexity of each, although they will have a need to communicate with each other for coordination. 
 - The VHF/UHF IP network will be on a separate IP net than the ethernet / Wifi. Devices / services that are resilient to very low throughput networks will need to specifically route their traffic over this network. This will prevent having a device / service overload the very low throughput VHF/UHF IP network.
+
+### Notes
+- [RaspAP](https://raspap.com/) may be a worth exploring for control of the USB Wifi AP
